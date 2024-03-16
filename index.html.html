@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #754747;
+            color: #e6d0d0;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .header-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .header-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .about-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .header-info {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .header-intro {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .section-hobbies {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .highlight {
+            color: #FF5722;
+        }
+
+        /* Gallery Styles */
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .gallery-group {
+            flex: 0 0 calc(33.333% - 20px);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-group:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-location {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .gallery-images img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Additional Styles */
+        .quote {
+            font-style: italic;
+            margin-top: 40px;
+        }
+
+        .quote-author {
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact-info a:hover {
+            color: #FF5722;
+        }
+
+        .additional-section {
+            margin-top: 60px;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-section-title {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .additional-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 60px;
+        }
+
+        .footer-info {
+            font-size: 1.2rem;
+        }
+
+        .footer-info a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-info a:hover {
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Batool Mohammed</h1>
+            <div class="header-details">
+                <p class="about-icon">*</p>
+                <p class="header-info">
+                    23 years old, Iraqi
+                    <br>
+                    Computer Science Engineering Student
+                </p>
+            </div>
+            <p class="header-intro">
+                Welcome to my page where I'll be introducing myself and telling you about my hobbies.
+            </p>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <section class="about-me">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-description">
+                I am Batool Mohammed, a 23-year-old Computer Science Engineering student at the University of Debrecen.
+                My aspiration is to pursue a master's and doctorate in the same field.
+            </p>
+            <p class="section-hobbies">
+                My Hobbies: <span class="highlight">Photography</span>, <span class="highlight">Traveling</span>, <span class="highlight">Design</span>
+            </p>
+        </section>
+
+        <section class="gallery">
+            <h2 class="section-title">Photography</h2>
+            <div class="gallery-images">
+                <div class="gallery-group">
+                    <p class="gallery-location">Paris</p>
+                    <img src="IMG-20240312-WA0059.jpg" alt="Paris">
+                    <img src="IMG-20240312-WA0062.jpg" alt="Paris">
+                    <img src="IMG-20240312-WA0067.jpg" alt="Paris">
+                </div>
+                <div class="gallery-group">
+                    <p class="gallery-location">Switzerland</p>
+                    <img src="IMG-20240312-WA0052.jpg" alt="Switzerland">
+                    <img src="IMG-20240312-WA0057.jpg" alt="Switzerland">
+                    <img src="IMG-20240312-WA0056.jpg" alt="Switzerland">
+                </div>
+                <div class="gallery-group">
+                    <p class="gallery-location">Italy</p>
+                    <img src="IMG-20240312-WA0047.jpg" alt="Italy">
+                    <img src="IMG-20240312-WA0066.jpg" alt="Italy">
+                    <img src="IMG-20240312-WA0060.jpg" alt="Italy">
+                </div>
+            </div>
+        </section>
+
+        <blockquote class="quote">
+            "The world is a book and those who do not travel read only one page."
+            <cite class="quote-author">- Saint Augustine</cite>
+        </blockquote>
+
+        <section class="additional-section">
+            <h2 class="additional-section-title">Traveling Experiences</h2>
+            <div class="additional-content">
+                <p>I've traveled to various countries around the world and each experience has been unique and memorable.</p>
+                <p>From exploring the historic streets of Rome to trekking through the lush landscapes of Switzerland, every destination has left a lasting impression on me.</p>
+                <p>Through traveling, I've gained a deeper appreciation for different cultures, cuisines, and ways of life.</p>
+            </div>
+        </section>
+
+        <section class="additional-section">
+            <h2 class="additional-section-title">Design Projects</h2>
+            <div class="additional-content">
+                <p>Designing is not just a hobby for me, it's a passion. Here are some of the design projects I've worked on:</p>
+                <ul>
+                    <li>Logo designs for local businesses</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="additional-section">
+            <h2 class="additional-section-title">Favorite Destinations</h2>
+            <div class="additional-content">
+                <p>Here are some of my favorite destinations that I've visited:</p>
+                <ul>
+                    <li>France, Paris</li>
+                    <li>Belgium, Brussels</li>
+                    <li>Italy, (verona,sirmione,venice,milan,roma)</li>
+                    <li>Switzerland, interlaken</li>
+                    <li>Austria, tirol</li>
+                </ul>
+                <p>Each of these places holds a special place in my heart and has contributed to my love for traveling.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="footer-info">Designed and developed by Batool Mohammed. Find me on 
+                <a href="https://twitter.com/">Twitter</a>,
+                <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+        </div>
+    </footer>
+</body>
+</html>
